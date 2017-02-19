@@ -47,3 +47,38 @@
 .bypostauthor {
 	display: block;
 }
+
+.entry-header{
+	position:relative;
+	z-index:-999;
+	margin-left:50px;
+}
+
+.entry-title {
+	position: absolute;
+	background-color: #248a83;
+	padding: .75rem 1.5rem;
+	display: inline-block;
+		left: 0;
+		top: 0;
+		margin-top: 4.5rem;
+		text-align: left;
+		max-width: 75%;
+		color: #fff;
+	a {
+		text-decoration: none;
+		color: #fff;
+		font-size: 2.1rem;
+	}
+}
+
+.entry-meta{
+	position:absolute;
+	width:464px;
+	margin-left:176px;
+	bottom:7px;
+	background-color:#248a83;
+	color:white;
+	padding: 1.00005rem 1.5rem;
+	text-transform:uppercase;
+}
