@@ -4,7 +4,6 @@
  *
  * @package RED_Starter_Theme
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -24,5 +23,8 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
+		<p class="read-more black-btn">
+            <a href="">Read More  -></a>
+        </p>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

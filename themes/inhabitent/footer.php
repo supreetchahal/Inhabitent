@@ -39,7 +39,7 @@
                     </div><!--business-hour-->
                     <div class="text-logo">
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-tent.svg" alt="Image of Inhabitent logo" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="Image of Inhabitent logo" />
                             </a>
                     </div><!-- text-logo -->
 					<div class="site-info-container">
