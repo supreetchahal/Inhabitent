@@ -11,6 +11,21 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
+
+ function my_custom_login_logo() {
+     echo '<style type="text/css">
+         h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/logos/inhabitent-logo-text-dark.svg) !important;
+         height: 53px !important; width: 300px !important; background-size: 300px 53px !important;}
+     </style>';
+}
+add_action('login_head', 'my_custom_login_logo');
+
+function the_url( $url ) {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'the_url' );
+
+
 function red_starter_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
