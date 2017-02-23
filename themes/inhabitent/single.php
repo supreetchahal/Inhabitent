@@ -5,8 +5,11 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+ get_header(); ?>
 
+<!-- this is a single post page -->
+<div>Single</div>
+<div class="container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -17,7 +20,6 @@ get_header(); ?>
 			<?php the_post_navigation(); ?>
 
 			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
@@ -29,4 +31,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

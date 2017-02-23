@@ -4,9 +4,11 @@
  *
  * @package RED_Starter_Theme
  */
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
@@ -23,8 +25,8 @@
 
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
-		<p class="read-more black-btn">
-            <a href="">Read More  -></a>
-        </p>
 	</div><!-- .entry-content -->
+
+	<a class="read-more" href="<?php echo esc_url( get_permalink() ) ?>">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+
 </article><!-- #post-## -->

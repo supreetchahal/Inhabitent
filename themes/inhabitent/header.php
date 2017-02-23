@@ -4,9 +4,11 @@
  *
  * @package RED_Starter_Theme
  */
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
+		<!-- <script src="https://use.fontawesome.com/a64733d244.js"></script> -->
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -20,27 +22,23 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-
-
 				<div class="site-branding">
-					<img src ="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-tent.svg" class ="header-logo"/>
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<ul class ="nav-bar">
-						<li class = "nav-item"><a href="#">Shop</a></li>
-						<li class = "nav-item"><a href="#">Journal</a></li>
-						<li class = "nav-item"><a href="#">About</a></li>
-						<li class = "nav-item"><a href="#">Find Us</a></li>
-						<li><i class="fa fa-search" aria-hidden="true"></i></li>
-					</ul>
-
-
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
 
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<!-- <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button> -->
+						<div class="container">
+				  <a class="logo" href="<?php echo get_bloginfo('url') ?>"><img src="<?php echo get_bloginfo('template_url') ?>/images/inhabitent-logo-tent.svg"/></a>
+
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-				</nav> #site-navigation -->
+					<?php get_search_form(); ?>
+
+           </div>
+				</nav><!-- #site-navigation -->
+
 			</header><!-- #masthead -->
-			<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				
 
 			<div id="content" class="site-content">

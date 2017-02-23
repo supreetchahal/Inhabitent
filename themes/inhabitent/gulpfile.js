@@ -38,7 +38,7 @@ gulp.task('scripts', ['lint'], function () {
         .pipe(rename({
             extname: '.min.js'
         }))
-        .pipe(gulp.dest('./build/js'))
+        .pipe(gulp.dest('./build/js'));
 });
 
 gulp.task('lint', function () {
@@ -57,7 +57,7 @@ gulp.task('browser-sync', function () {
     ];
 
     browserSync.init(files, {
-        proxy: 'localhost:8888/inhabitent/',
+        proxy: 'localhost:8888/inhabitent',
     });
 
     gulp.watch(files).on('change', browserSync.reload);
