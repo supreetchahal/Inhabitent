@@ -7,9 +7,9 @@
 
  get_header(); ?>
 
-<!-- this is a single post page -->
-<div>Single</div>
+
 <div class="container">
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -18,6 +18,8 @@
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
 			<?php the_post_navigation(); ?>
+<!--
+      <button href="#" id="close-comments">Close Comments</button> -->
 
 			<?php
 				if ( comments_open() || get_comments_number() ) :
