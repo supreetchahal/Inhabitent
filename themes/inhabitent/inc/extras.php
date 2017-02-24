@@ -60,31 +60,25 @@ add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
 
+function inhabitent_about_css(){
+			if(!is_page_template('about.php')){
+				return;
 
+			}
 
+			$image=CFS ()->get('banner_image');
+					if(!$image) {
+						return;
+					}
 
+			$hero_css = ".page-template-about .entry-header {
+        background:
+            linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
+            url({$image}) no-repeat center bottom;
+        background-size: cover, cover;
+				height: 100vh;
+}";
 
-
-// function inhabitent_about_css(){
-			// if(!is_page_template('about.php')){
-			// 	return;
-			//
-			// }
-// 			$hero_css = ".page-template-about .entry-header {
-//         background:
-//             linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ),
-//             url({$image}) no-repeat center bottom;
-//         background-size: cover, cover;
-// }";
-// 					$image=CFS ()->get('about_hero_image');
-			// 				if(!$image) {
-			// 					return;
-			// 				}
-			// wp_add_inline_style( 'red-starter-style', $custom_style);
-//
-// add_action( 'wp_enqueue_scripts','inhabitent_about_css');
-
-
-
-
-?>
+			wp_add_inline_style( 'red-starter-style', $hero_css);
+}
+add_action( 'wp_enqueue_scripts','inhabitent_about_css');
