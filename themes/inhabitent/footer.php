@@ -30,7 +30,7 @@
                             <span>
                                 <a href="#"><i class="fa fa-google-plus-square icon" aria-hidden="true"></i></a>
                             </span>
-                        </p>					
+                        </p>
                     </div><!--Contact  -->
                     <div class="orange-footer-text">
                             <h3>Business Hours</h3>
@@ -41,7 +41,7 @@
 								</div>
                     <div class="text-logo">
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/inhabitent-logo-text.svg" alt="Image of Inhabitent logo" />
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/logos/inhabitent-logo-text.svg" alt="Image of Inhabitent logo" />
                             </a>
                     </div><!-- text-logo -->
 					<div class="site-info-container">
