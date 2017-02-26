@@ -10,7 +10,7 @@
 .single-products .shop-item{
     display:flex;
     width: 1120px;
-    margin: 0 auto 7rem auto;
+    margin: 0 auto 6rem auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
     .item-img{
@@ -46,7 +46,7 @@
         }
         .item-price{
             font-family: $font__headings, sans-serif;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
 }
