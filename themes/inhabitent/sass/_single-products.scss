@@ -37,7 +37,6 @@
                 padding-right: 0.5rem;
             }
             &:hover{
-            background: $color__link;
             color: $color__background-body;
             }
         }
@@ -45,7 +44,7 @@
             display: none;
         }
         .item-price{
-            font-family: $font__headings, sans-serif;
+            font-family: sans-serif;
             font-size: 1.5rem;
         }
     }
